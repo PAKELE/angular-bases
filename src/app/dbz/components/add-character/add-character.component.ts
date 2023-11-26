@@ -23,7 +23,6 @@ export class AddCharacterComponent {
     //Si tiene nombre
     this.onNewCharacter.emit(this.character);
     //Para limpiar el formulario
-    this.character.name = '';
-    this.character.power = 0
+    this.character = {name:'', power:0}
   }
 }
